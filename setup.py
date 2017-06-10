@@ -14,7 +14,7 @@ plugin_package = "octoprint_cost"
 plugin_name = "OctoPrint-Cost"
 
 # The plugin's version. Can be overwritten within OctoPrint's internal data via __plugin_version__ in the plugin module
-plugin_version = "0.1.3"
+plugin_version = "0.1.4"
 
 # The plugin's description. Can be overwritten within OctoPrint's internal data via __plugin_description__ in the plugin
 # module
@@ -27,7 +27,7 @@ plugin_author = "Jan Szumiec"
 plugin_author_email = "jan.szumiec@gmail.com"
 
 # The plugin's homepage URL. Can be overwritten within OctoPrint's internal data via __plugin_url__ in the plugin module
-plugin_url = "https://github.com/jasiek/OctoPrint-Cost"
+plugin_url = "https://github.com/AmiableAnteater/OctoPrint-Cost"
 
 # The plugin's license. Can be overwritten within OctoPrint's internal data via __plugin_license__ in the plugin module
 plugin_license = "MIT"
