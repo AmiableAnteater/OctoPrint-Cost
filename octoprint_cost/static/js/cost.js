@@ -72,14 +72,17 @@ $(function() {
 		    var filament_used_volume = gcode.filament.tool0.volume / 1000;
                     var expected_time = gcode.estimatedPrintTime / 3600;
 
-		    if (settingsState.check_cost()) {
-		      var totalCost = cost_per_weight * filament_used_volume * density_of_filament + expected_time * cost_per_time;
-		    }
-		    else {
-		      var totalCost = cost_per_length * filament_used_length + expected_time * cost_per_time;
-		    }
+                    var powerCost = expected_time * cost_per_time;
+		            if (settingsState.check_cost()) {
+		                var materialCost = cost_per_weight * filament_used_volume * density_of_filament;
+		            } else {
+		                var materialCost = cost_per_length * filament_used_length + expected_time * cost_per_time;
+		            }
+                    var totalCost = powerCost + materialCost;
 
-                    output += gettext("Cost") + ": " + currency + totalCost.toFixed(2);
+                    output += gettext("Cost") + ": " + currency + materialCost.toFixed(2)
+                           + " (Mat.) + " + currency + powerCost.toFixed(2) 
+                           + " (Pow.) = " + currency + totalCost.toFixed(2);
                 }
             }
 
