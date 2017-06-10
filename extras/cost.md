@@ -10,9 +10,9 @@ license: MIT
 # TODO
 date: today's date in format YYYY-MM-DD, e.g. 2015-04-21
 
-homepage: https://github.com/jasiek/OctoPrint-Cost
-source: https://github.com/jasiek/OctoPrint-Cost
-archive: https://github.com/jasiek/OctoPrint-Cost/archive/master.zip
+homepage: https://github.com/AmiableAnteater/OctoPrint-Cost
+source: https://github.com/AmiableAnteater/OctoPrint-Cost
+archive: https://github.com/AmiableAnteater/OctoPrint-Cost/archive/master.zip
 
 # TODO set this to true if your plugin uses the dependency_links setup parameter to include
 # library versions not yet published on PyPi. SHOULD ONLY BE USED IF THERE IS NO OTHER OPTION!
