@@ -55,12 +55,12 @@ class CostPlugin(octoprint.plugin.SettingsPlugin,
 
 				# version check: github repository
 				type="github_release",
-				user="jasiek",
+				user="AmiableAnteater",
 				repo="OctoPrint-Cost",
 				current=self._plugin_version,
 
 				# update method: pip
-				pip="https://github.com/jasiek/OctoPrint-Cost/archive/{target_version}.zip"
+				pip="https://github.com/AmiableAnteater/OctoPrint-Cost/archive/{target_version}.zip"
 			)
 		)
 
